@@ -8,3 +8,13 @@ services:
       - POSTGRES_DB=huyak
     ports:
       - "5432:5432"
+  api-server:
+    build:
+      context: .
+      dockerfile: build/Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - DB_HOST=database
+    depends_on:
+      - database
