@@ -1,0 +1,10 @@
+version: '3'
+services:
+  database:
+    image: postgres:11.5-alpine
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=huyak
+    ports:
+      - "5432:5432"
