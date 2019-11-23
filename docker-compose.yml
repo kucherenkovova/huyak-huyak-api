@@ -13,8 +13,9 @@ services:
       context: .
       dockerfile: build/Dockerfile
     ports:
-      - "3000:3000"
+      - "3000:3001"
     environment:
       - DB_HOST=database
+      - SELF_PORT=3001
     depends_on:
       - database

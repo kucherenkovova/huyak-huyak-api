@@ -5,4 +5,4 @@ WORKDIR /app
 RUN npm i --production
 
 COPY . /app/
-CMD npm start
+CMD ["npm", "start"]

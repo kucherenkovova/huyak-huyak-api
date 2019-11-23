@@ -1,9 +1,9 @@
+const config = require('config');
+
 module.exports = {
     client: 'pg',
     connection: {
-      database: 'huyak',
-      user:     'postgres',
-      password: 'postgres'
+      ...config.db
     },
     pool: {
       min: 2,

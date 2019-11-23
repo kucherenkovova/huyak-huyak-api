@@ -1,0 +1,7 @@
+build
+migrations
+node_modules
+.gitignore
+*.yml
+*.md
+knexfile.js
